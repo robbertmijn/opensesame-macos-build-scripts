@@ -22,6 +22,8 @@ dependencies:
 # without dependendencies to keep the environment clean
 - pygame
 - pyglet
+- pysoundfile
+- python-sounddevice
 - wxpython
 - json_tricks
 - freetype-py
@@ -42,3 +44,4 @@ dependencies:
     - qtconsole
     - python-bidi
     - matplotlib  # don't use conda package because this depends on PyQt5
+    - psychopy_sounddevice

@@ -120,7 +120,7 @@ dependencies:
   - ncurses=6.4=hf0c8a7f_0
   - nettle=3.8.1=h96f3785_1
   - nodejs=18.16.1=h46e3395_0
-  - numpy=1.25.0=py311hc44ba51_0
+  - numpy=1.24.4=py311hc44ba51_0 # downgraded for 4.0.0a49
   - openh264=2.3.1=hf0c8a7f_2
   - openjpeg=2.5.0=h13ac156_2
   - openpyxl=3.1.2=py311h2725bcf_0
@@ -169,11 +169,13 @@ dependencies:
   - pyrsistent=0.19.3=py311h5547dcb_0
   - pyserial=3.5=pyhd8ed1ab_0
   - pysocks=1.7.1=pyha2e5f31_6
+  - pysoundfile=0.12.1=pyhd8ed1ab_0
   - pyspellchecker=0.5.2=py_1
   - python=3.11.4=h30d4d87_0_cpython
   - python-dateutil=2.8.2=pyhd8ed1ab_0
   - python-fastjsonschema=2.17.1=pyhd8ed1ab_0
   - python-levenshtein=0.21.1=pyhd8ed1ab_0
+  - python-sounddevice=0.4.6=pyhd8ed1ab_0
   - python-tzdata=2023.3=pyhd8ed1ab_0
   - python.app=1.4=py311h5547dcb_1
   - python_abi=3.11=3_cp311
@@ -184,7 +186,7 @@ dependencies:
   - qtawesome=1.2.3=pyhd8ed1ab_0
   - qtpy=2.3.1=pyhd8ed1ab_0
   - rapidfuzz=2.15.1=py311h814d153_0
-  - rapunzel=1.0.0a9=py_2 # downgraded to test updater
+  - rapunzel=1.0.0a10=py_2
   - readline=8.2=h9e318b2_1
   - requests=2.31.0=pyhd8ed1ab_0
   - ruamel.yaml=0.17.32=py311h2725bcf_0
@@ -234,7 +236,7 @@ dependencies:
     - debugpy==1.6.7
     - decorator==4.4.2
     - executing==1.2.0
-    - http://files.cogsci.nl/expyriment-0.10.0+opensesame2-py3-none-any.whl
+    - http://files.cogsci.nl/expyriment-0.10.0+opensesame2-py3-none-any.whl    
     - fonttools==4.40.0
     - imageio==2.31.1
     - imageio-ffmpeg==0.4.8
@@ -253,6 +255,7 @@ dependencies:
     - pickleshare==0.7.5
     - proglog==0.1.10
     - prompt-toolkit==3.0.39
+    - psychopy-sounddevice==0.0.1
     # - psychopy==2023.1.0
     # Manual install because of deps:
     # pip install psychopy --no-deps 
