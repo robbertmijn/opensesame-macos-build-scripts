@@ -8,6 +8,7 @@ dependencies:
 - python=3.11
 - conda
 - pip
+- numpy=1.24.4
 # OpenSesame packages
 - opensesame>=3.99.99
 - rapunzel>=0.99.99
@@ -24,6 +25,7 @@ dependencies:
 - pyglet
 - pysoundfile
 - python-sounddevice
+- pyaudio
 - wxpython
 - json_tricks
 - freetype-py
