@@ -55,3 +55,11 @@ Test:
 - osweb
 - JATOS integration
 - video playback
+
+## Building app and packaging
+
+
+```
+conda activate app-builder
+python anaconda-env-to-osx-app/conda_env_to_app anaconda-env-to-osx-app/settings.py
+```
