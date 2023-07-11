@@ -86,7 +86,7 @@ RESOURCE_DIR = ""
 
 # Create a DMG template name, so version can be overwritten if it can be
 # determined from the OS libraries.
-os_dmg_template = 'opensesame_{}-py37-macos-x64-1.dmg'
+os_dmg_template = 'opensesame_{}-py311-macos-x64-1.dmg'
 
 # Name of the DMG file that will be created in OUTPUT_FOLDER
 DMG_FILE = os_dmg_template.format(VERSION)
