@@ -120,11 +120,11 @@ try:
 except Exception as e:
     print("Could not read OpenSesame version from metadata: {}".format(e))
 else:
-    version_match = re.search("(?<=__version__)\s*=\s*u'(.*)'", metadata)
+    version_match = re.search("(?<=__version__)\s*=\s*'(.*)'", metadata)
     if version_match:
         VERSION = version_match.group(1)
 
-    codename_match = re.search("(?<=codename)\s*=\s*u'(.*)'", metadata)
+    codename_match = re.search("(?<=codename)\s*=\s*'(.*)'", metadata)
     if codename_match:
         codename = codename_match.group(1)
         LONG_VERSION = VERSION + ' ' + codename
