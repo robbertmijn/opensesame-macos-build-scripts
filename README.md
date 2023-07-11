@@ -20,11 +20,11 @@ Edit yml
     - http://files.cogsci.nl/expyriment-0.10.0+opensesame2-py3-none-any.whl
 
 - add reminder to install psychopy:
-    \# - psychopy==2023.1.0
-    \# Manual install because of deps:
-    \# pip install psychopy --no-deps 
 ```
-
+    # - psychopy==2023.1.0
+    # Manual install because of deps:
+    # pip install psychopy --no-deps 
+```
 Remove env
 
 ```
