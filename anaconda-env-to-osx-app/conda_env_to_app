@@ -191,10 +191,15 @@ def create_app_structure():
     with open(APP_SCRIPT, 'w') as fp:
         # Write the contents
         try:
-            fp.write("#!/usr/bin/env bash\n"
-                     "script_dir=$(dirname \"$(dirname \"$0\")\")\n"
-                     "$script_dir/Resources/bin/python "
-                     "$script_dir/Resources/bin/{} $@".format(ENTRY_SCRIPT))
+            fp.write("""#!/usr/bin/env bash
+script_dir=$(dirname "$(dirname "$0")")
+export PATH="$script_dir/Resources/condabin:$PATH"
+export CONDA_EXE="$script_dir/Resources/bin/conda"
+export CONDA_PREFIX="$script_dir/Resources"
+export CONDA_PYTHON_EXE="$script_dir/Resources/bin/python"
+$script_dir/Resources/bin/python $script_dir/Resources/bin/opensesame $@
+""")
+
         except IOError as e:
             logger.exception("Could not create Contents/OpenSesame script")
             sys.exit(1)

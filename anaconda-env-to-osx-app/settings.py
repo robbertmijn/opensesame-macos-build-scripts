@@ -35,7 +35,7 @@ CONDA_EXCLUDE_FILES = [
     'bin/qmake',
     'bin/2to3*',
     'bin/autopoint',
-    'conda-meta',
+    # 'conda-meta',
     'include',
     'lib/*.prl',
     'lib/pkg-config',
