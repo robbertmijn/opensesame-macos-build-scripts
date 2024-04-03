@@ -12,7 +12,7 @@ Export environment to new `.yml`
 
 ```
 conda activate opensesame
-conda env export > env-export/opensesame_4.0.1-py311-macos-x64-1.yml
+conda env export > env-export/opensesame_4.0.24-py311-macos-x64-1.yml
 ```
 
 Edit yml
@@ -29,7 +29,7 @@ conda env remove -n opensesame
 Rebuild with the new .yml
 
 ```
-conda env create -f env-export/opensesame_4.0.5-py311-macos-x64-1.yml
+conda env create -f env-export/opensesame_4.0.24-py311-macos-x64-1.yml
 ```
 
 Manually install psychopy
